@@ -6,12 +6,14 @@ data = [
     {"Name": "Charlie", "Age": 35, "Country": "UK"}
 ]
 
+
 cfile = "output.csv"
 
 with open(cfile, 'w',newline='') as file:
-    write = csv.DictWriter(file, fieldnames=["Name", "Age", "Country"])
+    write = csv.DictWriter(file,fieldnames=["Name","Age","Country"])
     
     write.writeheader()
+    
     
     write.writerows(data)
 

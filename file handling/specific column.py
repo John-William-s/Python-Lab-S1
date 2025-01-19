@@ -6,7 +6,7 @@ filecsv = "example.csv"
 
 with open(filecsv, 'r') as file:
     
-    read = csv.reader(file)
-
-    for row in read:
-        print(row[n-1])  
+   rows=csv.reader(file)
+   
+   for row in rows:
+      print(row[n-1])
